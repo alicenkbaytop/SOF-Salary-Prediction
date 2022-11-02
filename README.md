@@ -21,8 +21,8 @@ In this project, the decision tree model is trained on the python programming la
 * [Stack Overflow](https://insights.stackoverflow.com/survey/2020)
 
 ## 📄 Prediction Page 📄
-![Prediction Page]([/img/prediction page1.png](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/prediction%20page1.png))
-![Prediction Pag]([/img/prediction page2.png](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/prediction%20page2.png))
+![Prediction Page](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/prediction%20page1.png)
+![Prediction Pag](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/prediction%20page2.png)
 
 ## 📖 Details Page 📖
-![Details Page]([/img/details page 1.png](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/details%20page%201.png))
+![Details Page](https://github.com/alicenkbaytop/SOF-Salary-Prediction/blob/main/img/details%20page%201.png)
