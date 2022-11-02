@@ -1,6 +1,6 @@
 # 💣 Stack Overflow 2020 Developer Survey Salary Prediction  💣
 
-* You can find [here](https://sofsalarysurvey123.herokuapp.com/).
+* You can access application [here](https://sofsalarysurvey123.herokuapp.com/).
 
 ## 🔥 Description 🔥
 
