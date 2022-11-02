@@ -5,8 +5,8 @@ from details_page import show_details_page
 st.markdown(
     """
     <style>
-    * {
-        background-color: ##a0aec0;
+    body {
+        background: #edf2f7;
     }
     </style>
     """,
