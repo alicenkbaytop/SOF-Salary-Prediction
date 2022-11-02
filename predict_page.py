@@ -16,7 +16,7 @@ le_education = data["le_education"]
 def show_predict_page():
     st.title("Stack Overflow Salary Prediction 2020")
     
-    st.image("https://www.clipartmax.com/png/middle/171-1717700_prediction-prediction.png")
+    st.image("https://www.picserver.org/assets/library/2020-10-30/originals/predict.jpg")
 
     st.write("""### We need some information to predict the salary""")
 
