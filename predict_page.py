@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import numpy as np
 
-
 def load_model():
     with open('saved_steps.pkl', 'rb') as file:
         data = pickle.load(file)
@@ -15,7 +14,7 @@ le_country = data["le_country"]
 le_education = data["le_education"]
 
 def show_predict_page():
-    st.title("Software Developer Salary Prediction")
+    st.title("Stack Overflow Salary Prediction 2020")
 
     st.write("""### We need some information to predict the salary""")
 
@@ -45,10 +44,9 @@ def show_predict_page():
 
     country = st.selectbox("Country", countries)
     education = st.selectbox("Education Level", education)
-
     expericence = st.slider("Years of Experience", 0, 50, 3)
 
-    ok = st.button("Calculate Salary")
+    ok = st.button("Predict Salary")
     if ok:
         X = np.array([[country, education, expericence ]])
         X[:, 0] = le_country.transform(X[:,0])

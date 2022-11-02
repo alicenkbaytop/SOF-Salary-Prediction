@@ -11,14 +11,12 @@ def shorten_categories(categories, cutoff):
             categorical_map[categories.index[i]] = 'Other'
     return categorical_map
 
-
 def clean_experience(x):
     if x ==  'More than 50 years':
         return 50
     if x == 'Less than 1 year':
         return 0.5
     return float(x)
-
 
 def clean_education(x):
     if 'Bachelor’s degree' in x:
@@ -28,7 +26,6 @@ def clean_education(x):
     if 'Professional degree' in x or 'Other doctoral' in x:
         return 'Post grad'
     return 'Less than a Bachelors'
-
 
 @st.cache
 def load_data():
@@ -52,15 +49,11 @@ def load_data():
 
 df = load_data()
 
-def show_explore_page():
-    st.title("Explore Software Engineer Salaries")
+def show_details_page():
+    st.title("Stack Overflow Developer Survey 2020")
 
-    st.write(
-        """
-    ### Stack Overflow Developer Survey 2020
-    """
-    )
-
+    st.write("""### You can find more details [here](https://insights.stackoverflow.com/survey/2020).""")
+    
     data = df["Country"].value_counts()
 
     fig1, ax1 = plt.subplots()
@@ -71,20 +64,12 @@ def show_explore_page():
 
     st.pyplot(fig1)
     
-    st.write(
-        """
-    #### Mean Salary Based On Country
-    """
-    )
+    st.write("""#### Mean Salary Based On Country""")
 
     data = df.groupby(["Country"])["Salary"].mean().sort_values(ascending=True)
     st.bar_chart(data)
 
-    st.write(
-        """
-    #### Mean Salary Based On Experience
-    """
-    )
+    st.write("""#### Mean Salary Based On Experience""")
 
     data = df.groupby(["YearsCodePro"])["Salary"].mean().sort_values(ascending=True)
     st.line_chart(data)
